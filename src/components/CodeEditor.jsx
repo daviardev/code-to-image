@@ -13,7 +13,15 @@ export default function CodeEditor () {
         maxWidth={1000}
       >
         <div>
-          <AceEditor />
+          <AceEditor
+            value='function() { return "Hello World" }'
+            fontSize={16}
+            showGutter={false}
+            wrapEnabled
+            showPrintMargin={false}
+            highlightActiveLine={false}
+            className='ace-editor'
+          />
         </div>
       </Resizable>
     </>
